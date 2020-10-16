@@ -27,7 +27,7 @@ const NavBar = props => {
     <div>
       <Navbar color="light" light expand="md" fixed="top">
         <Link to="/" className="navbar-brand">
-          <span>e</span>-shop
+          <span>UD Berkah Utama</span> Store
         </Link>
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
@@ -75,12 +75,12 @@ const NavBar = props => {
                       {props.cartItems.map((item, index) => (
                         <tr key={index}>
                           <td className="si-pic">
-                            <img src={item.src} alt="" />
+                            <img src={"http://localhost/tokoku-server/assets/images/products/"+item.src} alt="" />
                           </td>
                           <td className="si-text">
                             <div className="product-selected">
                               <p>
-                                Ksh. {item.price} x {item.quantity}
+                                Rp. {item.price*item.quantity}
                               </p>
                               <h6>{item.name}</h6>
                             </div>
@@ -106,7 +106,7 @@ const NavBar = props => {
               </div>
               <div className="select-total">
                 <span>total:</span>
-                <h5>Ksh. {props.total ? props.total : 0}</h5>
+                <h5>Rp. {props.total ? props.total : 0}</h5>
               </div>
               <div className="select-button">
                 <Link to="/shoping-cart" className="primary-btn view-card">

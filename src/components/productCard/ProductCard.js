@@ -12,7 +12,7 @@ import ProductSheet from "../bottomSheet/ProductSheet"
 import Stars from "../rating/Stars"
 import { addToCart } from "../../actions/cartActions"
 
-function ProductCard({ product, addToCart, ...props }) {
+function ProductCard({ product, addToCart, ...props}) {
   const [open, setOpen] = useState(false)
   const [quantity, setQuantity] = useState(1)
 
@@ -90,15 +90,6 @@ function ProductCard({ product, addToCart, ...props }) {
         <div className="product_name">
           <h4>{product.name}</h4>
         </div>
-        {product.sizes.length && (
-          <div className="mt-4 product_sizes">
-            <h6 className="text-secondary">Sizes</h6>
-            <ul className="product_sizes">
-             
-            </ul>
-          </div>
-        )}
-
         <div className="mt-4 product_quantity">
           <h6 className="text-secondary">Qty.</h6>
           <div className="d-flex px-2">
