@@ -25,9 +25,9 @@ const NavBar = props => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md" fixed="top">
+      <Navbar className="shadow" color="light" light expand="md" fixed="top">
         <Link to="/" className="navbar-brand">
-          <span>UD Berkah Utama</span> Store
+          <span>Berkah Utama</span> Store
         </Link>
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>

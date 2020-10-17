@@ -27,7 +27,9 @@
         "reactstrap": "^8.5.1",
         "redux": "^4.0.5",
         "redux-thunk": "^2.3.0",
-        "styled-components": "^5.1.1"
+        "styled-components": "^5.1.1",
+        "tiny-slider": "^2.9.3",
+        "tiny-slider-react": "^0.5.3"
     },
     "devDependencies": {
         "prettier": "2.0.5"
